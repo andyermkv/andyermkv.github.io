@@ -52,7 +52,7 @@ html.js .loader_inner {
 
 body {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
@@ -75,6 +75,7 @@ body {
 	align-content: center;
 	align-items: center;
 	margin-top: 50px;
+	margin-bottom: 20px;
 	width: 80%;
 	box-shadow: 0 10px 40px rgba(0,0,0,0.1);
 }
@@ -87,17 +88,17 @@ body {
 	width: 50%;
 	font-family: "Raleway", sans-serif;
 	line-height: 1.1;
-	margin-right: 40px;
+	margin-right: 50px;
 	margin-top: 20px;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 
 .description:after {
 	content: "";
 	position: absolute;
-	height: 125%;
-	width: 1px;
-	right: 10px;
+	height: 110%;
+	width: 5px;
+	right: 5px;
 	background-color: lightskyblue;
 	opacity: 0.3;
 }
@@ -110,8 +111,8 @@ body {
 	content: "";
 	position: absolute;
 	width: 140%;
-	height: 1px;
-	top: -20px;
+	height: 6px;
+	top: -23px;
 	right: 40px;
 	background-color: salmon;
 	opacity: 0.8;
@@ -122,26 +123,13 @@ body {
 	padding: 0;
 }
 
-.fio {
-	position: relative;
-	z-index: 1;
+.color_yellow {
 	font-weight: 500;
 	font-size: 60px;
 }
 
-.description .color_yellow {
-	display: inline-block;
-	position: relative;
-	width: 500px;
-	height: 35px;
-	top: 90px;
-	z-index: 0;
-}
-
 .description .color_yellow:hover {
-	cursor: pointer;
-	background-color: yellow;
-	z-index: 0;
+	background-color: lightgoldenrodyellow;
 }
 
 .description .color_green:hover {
@@ -152,7 +140,6 @@ body {
 	background-color: lightpink;
 }
 
-
 .chat {
 	display: flex;
 	flex-direction: column;
@@ -161,11 +148,11 @@ body {
 	font-family: "SourceCodePro", monospace;
 	font-weight: 200;
 	font-size: 18px;
-	opacity: 0.6;
 }
 
 .chat p {
 	position: relative;
+	opacity: 0.6;
 }
 
 .chat p::before {
@@ -216,13 +203,46 @@ input[type="text"]:focus::-moz-placeholder {
 }
 
 
+.chat--404 {
+	color: #EE332F;
+	font-size: 16px;
+}
 
+.chat-404::before {
+	content: ">";
+	position: absolute;
+	left: -25px;
+	opacity: 0.5;
+}
 
+.main-footer,
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 16px;
+}
 
+.main-footer {
+	width: 8%;
+}
 
+.portfolio span {
+	margin-bottom: 5px;
+	text-align: center;
+}
 
+.social {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
 
+.social img {
+	opacity: 0.5;
+}
 
-
-
-
+.social img:hover {
+	opacity: 1;
+}

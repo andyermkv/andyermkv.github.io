@@ -2,16 +2,42 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.description {
+		font-size: 40px;
+	}
+	.color_yellow {
+		font-weight: 500;
+		font-size: 50px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.description {
+		font-size: 30px;
+	}
+	
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.color_yellow {
+		font-weight: 500;
+		font-size: 35px;
+	}
+	.description {
+		font-size: 25px;
+	}
+	.main--line {
+		font-size: 20px;
+	}
+	.chat,
+	.chat--404,
+	.chat input[type="text"],
+	input[type="text"]::-webkit-input-placeholder {
+		font-size: 14px;
+	}
+}
 	
 	/*Disable Animation on Mobile Devices*/
 	.animated {
@@ -39,7 +65,17 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.color_yellow {
+		font-weight: 500;
+		font-size: 30px;
+	}
+	
+	.chat,
+	.chat--404,
+	.chat input[type="text"],
+	input[type="text"]::-webkit-input-placeholder {
+		font-size: 12px;
+	}
 }
 
 /* Custom, iPhone Retina */
